@@ -6,6 +6,7 @@ type thermald_exec, exec_type, file_type;
 init_daemon_domain(thermald)
 
 allow thermald self:socket create_socket_perms;
+allowxperm thermald self:socket ioctl msm_sock_ipc_ioctls;
 
 # CPU hotplug uevent
 allow thermald self:netlink_kobject_uevent_socket { create setopt bind read };
@@ -43,6 +44,8 @@ allow thermald thermald_socket:sock_file create_file_perms;
 # Connect to mpdecision.
 allow thermald mpdecision_socket:dir r_dir_perms;
 unix_socket_connect(thermald, mpdecision, mpdecision)
+
+allowxperm thermald self:socket ioctl msm_sock_ipc_ioctls;
 
 # Access to /dev/msm_thermal_query
 allow thermald thermal_engine_device:chr_file rw_file_perms;
