@@ -135,9 +135,6 @@ on post-fs-data
     # wifi
     chown wifi system /persist/wifi
 
-    #  bluetooth
-    mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
-
     # Create directory used by audio subsystem
     mkdir /data/misc/audio 0770 audio audio
 
