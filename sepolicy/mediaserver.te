@@ -8,3 +8,6 @@ unix_socket_send(mediaserver, mpdecision, mpdecision)
 # TODO: Investigate the specific type of socket.
 allow mediaserver self:socket create_socket_perms;
 allowxperm mediaserver self:socket ioctl msm_sock_ipc_ioctls;
+
+# For text relocations in /system/vendor/lib/libmmjpeg.so
+allow mediaserver system_file:file execmod;
