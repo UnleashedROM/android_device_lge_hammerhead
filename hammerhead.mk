@@ -221,6 +221,10 @@ PRODUCT_PACKAGES += \
     init.recovery.hammerhead.rc \
     ueventd.hammerhead.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 # Thermal
 PRODUCT_COPY_FILES += \
     android.hardware.thermal@1.0-impl \
