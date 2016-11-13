@@ -10,6 +10,8 @@ persist.audio.fluence.speaker=false
 
 # Camera
 camera.disable_zsl_mode=1
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
 
 # Dalvik/VM
 dalvik.vm.dex2oat-swap=false
