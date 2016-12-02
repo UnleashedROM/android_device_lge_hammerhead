@@ -89,6 +89,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
 # GPS
 PRODUCT_PACKAGES += \
     libloc_adapter \
