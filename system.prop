@@ -1,3 +1,6 @@
+# API Level
+ro.product.first_api_level=19
+
 # Audio
 af.fast_track_multiplier=1
 media.aac_51_output_enabled=true
