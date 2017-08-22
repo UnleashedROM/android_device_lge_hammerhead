@@ -172,6 +172,10 @@ PRODUCT_PACKAGES += \
     mm-jpeg-interface-test \
     mm-qcamera-app
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/manifest.xml:system/vendor/manifest.xml
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
