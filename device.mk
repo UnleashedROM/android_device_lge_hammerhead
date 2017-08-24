@@ -111,6 +111,7 @@ DEVICE_PACKAGE_OVERLAYS := \
     device/lge/hammerhead/overlay
 
 PRODUCT_PACKAGES := \
+    android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
@@ -121,6 +122,10 @@ PRODUCT_PACKAGES := \
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     librs_jni
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
 
 # Graphics
 PRODUCT_PACKAGES += \
