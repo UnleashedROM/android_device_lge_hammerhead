@@ -30,6 +30,10 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := hammerhead_defconfig
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
