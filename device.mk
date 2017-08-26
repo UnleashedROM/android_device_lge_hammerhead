@@ -171,6 +171,8 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@1.0-impl \
     libqomx_core \
     libmmcamera_interface \
     libmmjpeg_interface \
