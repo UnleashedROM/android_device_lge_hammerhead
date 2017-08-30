@@ -15,12 +15,10 @@
 #
 
 import init.hammerhead.usb.rc
-import init.hammerhead_svelte.rc
-import init.hammerhead.diag.rc
-import init.hammerhead_fp.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
+    chmod 0775 /sys/kernel/debug
     chown system system /sys/kernel/debug/kgsl/proc
 
 on init
@@ -167,6 +165,9 @@ on post-fs-data
     # Ecc_Handler qcril.db
     mkdir /data/misc/radio 0770 radio radio
     symlink /system/etc/qcril.db /data/misc/radio/qcril.db
+
+    # Create directory used by display clients
+    mkdir /data/misc/display 0770 root system
 
     setprop vold.post_fs_data_done 1
 
