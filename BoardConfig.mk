@@ -116,7 +116,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/hammerhead
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
-BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
+#BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
 
 ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
 BOARD_SEPOLICY_DIRS += \
