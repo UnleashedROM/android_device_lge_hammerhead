@@ -49,3 +49,5 @@ allowxperm thermald self:socket ioctl msm_sock_ipc_ioctls;
 
 # Access to /dev/msm_thermal_query
 allow thermald thermal_engine_device:chr_file rw_file_perms;
+allow thermald sysfs_leds:dir search;
+allow thermald sysfs_leds:lnk_file read;
