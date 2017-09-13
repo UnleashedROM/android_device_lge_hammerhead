@@ -225,8 +225,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
 # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
 PRODUCT_COPY_FILES += \
-    android.hardware.thermal@1.0-impl \
     $(LOCAL_PATH)/rootdir/etc/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
 # Vibrator
